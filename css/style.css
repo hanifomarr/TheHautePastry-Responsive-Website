@@ -27,3 +27,7 @@
 
     --transation: all 400ms ease;
 }
+
+.body{
+    text-align-last: auto;
+}
