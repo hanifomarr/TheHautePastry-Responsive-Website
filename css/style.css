@@ -158,3 +158,38 @@ header{
 .header__left p{
     margin: 1rem 0 2.4rem;
 }
+
+/*----------------------------- Category -----------------------------*/
+
+.categories{
+    background: var(--color-primary);
+}
+
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+    
+}
+
+.categories__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+}
+
+.categories__left p{
+    margin: 1rem 0 3rem;
+}
+
+.categories__right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category{
+    background: var(--color-black);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transation);
+}
