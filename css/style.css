@@ -163,6 +163,7 @@ header{
 
 .categories{
     background: var(--color-primary);
+    height: 29rem;
 }
 
 .categories h1{
@@ -174,7 +175,10 @@ header{
 .categories__container{
     display: grid;
     grid-template-columns: 40% 60%;
-    gap: 3rem;
+}
+
+.categories__left{
+    margin-right: 3rem;
 }
 
 .categories__left p{
@@ -192,4 +196,22 @@ header{
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transation);
+}
+
+.category:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.category__icon{
+    background: var(--color-success);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category h5{
+    margin: 2rem 0 1rem;
+}
+
+.category p{
+    font-size: 0.85rem;
 }
