@@ -9,7 +9,7 @@
 }
 
 :root {
-    --color-primary: #6c63ff;
+    --color-primary: #FFB200;
     --color-success: #00bf8e;
     --color-warning: blue;
     --color-danger: red;
@@ -157,6 +157,12 @@ header{
 
 .header__left p{
     margin: 1rem 0 2.4rem;
+}
+
+/* ---------change navbar on scroll -----------*/
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 /*----------------------------- Category -----------------------------*/
