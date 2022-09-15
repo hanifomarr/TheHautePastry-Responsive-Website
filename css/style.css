@@ -11,11 +11,11 @@
 :root {
     --color-primary: #6c63ff;
     --color-success: #00bf8e;
-    --color-warning: #;
-    --color-danger: ;
+    --color-warning: blue;
+    --color-danger: red;
     --color-danger-variant: ;
     --color-white: white;
-    --color-light: ;
+    --color-light: yellow;
     --color-black: #181818; 
     --color-bg: #181818;
     --color-bg1: ;
@@ -206,6 +206,22 @@ header{
     background: var(--color-success);
     padding: 0.7rem;
     border-radius: 0.9rem;
+}
+
+.category:nth-child(2) .category__icon{
+    background: var(--color-primary);
+}
+
+.category:nth-child(3) .category__icon{
+    background: var(--color-danger);
+}
+
+.category:nth-child(4) .category__icon{
+    background: var(--color-light);
+}
+
+.category:nth-child(5) .category__icon{
+    background: var(--color-success);
 }
 
 .category h5{
