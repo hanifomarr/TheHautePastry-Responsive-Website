@@ -15,10 +15,10 @@ faqs.forEach(faq => {
 
         //change icon
         const icon = faq.querySelector('.faq__icon span');
-            if(icon.innerHTML === 'add') {
-                icon.innerHTML = "remove";
+            if(icon.innerHTML === "remove") {
+                icon.innerHTML = "add";
             } else{
-                icon.innerHTML = 'add';
+                icon.innerHTML = "remove";
             }
     })
 })
