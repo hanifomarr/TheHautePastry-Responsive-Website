@@ -16,7 +16,7 @@
     --color-danger-variant: ;
     --color-white: white;
     --color-light: yellow;
-    --color-black: #181818; 
+    --color-black: #181818;
     --color-bg: #181818;
     --color-bg1: ;
     --color-bg2: ;
@@ -35,51 +35,55 @@ body {
     background-color: var(--color-bg);
 }
 
-.container{
+.container {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
 
-section{
+section {
     padding: 6rem 0;
 }
 
-section h2{
+section h2 {
     text-align: center;
     margin-bottom: 4rem;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     line-height: 1.2;
 }
 
-h1{
+h1 {
     font-size: 1.2rem;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-size: 1.6rem;
 }
 
-h4{
+h4 {
     font-size: 1.3rem;
 }
 
-a{
+a {
     color: var(--color-white);
 }
 
-img{
+img {
     width: 100%;
     display: block;
     object-fit: cover;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: var(--color-white);
     color: var(--color-black);
@@ -89,20 +93,20 @@ img{
     transition: var(--transation);
 }
 
-.btn:hover{
+.btn:hover {
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
 }
 
-.btn-primary{
+.btn-primary {
     background: var(--color-danger);
     color: var(--color-white);
 }
 
 /*----------------------------- NAVBAR -----------------------------*/
 
-nav{
+nav {
     background: transparent;
     width: 100vw;
     height: 5rem;
@@ -111,35 +115,35 @@ nav{
     z-index: 11;
 }
 
-.nav__container{
+.nav__container {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav button{
+nav button {
     display: none;
 }
 
-.nav__menu{
+.nav__menu {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
-.nav__menu a{
+.nav__menu a {
     font-size: 0.9rem;
     transition: var(--transation);
 }
 
-.nav__menu a:hover{
+.nav__menu a:hover {
     color: var(--color-black);
 }
 
 /*----------------------------- HEADER -----------------------------*/
 
-header{
+header {
     position: relative;
     top: 5rem;
     overflow: hidden;
@@ -147,7 +151,7 @@ header{
     margin-bottom: 5rem;
 }
 
-.header__container{
+.header__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -155,135 +159,136 @@ header{
     height: 100%;
 }
 
-.header__left p{
+.header__left p {
     margin: 1rem 0 2.4rem;
 }
 
 /* ---------change navbar on scroll -----------*/
-.window-scroll{
+.window-scroll {
     background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 /*----------------------------- Category -----------------------------*/
 
-.categories{
+.categories {
     background: var(--color-primary);
     height: 29rem;
 }
 
-.categories h1{
+.categories h1 {
     line-height: 1;
     margin-bottom: 3rem;
-    
+
 }
 
-.categories__container{
+.categories__container {
     display: grid;
     grid-template-columns: 40% 60%;
 }
 
-.categories__left{
+.categories__left {
     margin-right: 3rem;
 }
 
-.categories__left p{
+.categories__left p {
     margin: 1rem 0 3rem;
 }
 
-.categories__right{
+.categories__right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
 }
 
-.category{
+.category {
     background: var(--color-black);
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transation);
 }
 
-.category:hover{
+.category:hover {
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
-.category__icon{
+.category__icon {
     background: var(--color-success);
     padding: 0.7rem;
     border-radius: 0.9rem;
 }
 
-.category:nth-child(2) .category__icon{
+.category:nth-child(2) .category__icon {
     background: var(--color-primary);
 }
 
-.category:nth-child(3) .category__icon{
+.category:nth-child(3) .category__icon {
     background: var(--color-danger);
 }
 
-.category:nth-child(4) .category__icon{
+.category:nth-child(4) .category__icon {
     background: var(--color-light);
 }
 
-.category:nth-child(5) .category__icon{
+.category:nth-child(5) .category__icon {
     background: var(--color-success);
 }
 
-.category h5{
+.category h5 {
     margin: 2rem 0 1rem;
 }
 
-.category p{
+.category p {
     font-size: 0.85rem;
 }
 
 /*----------------------------- Menu -----------------------------*/
 
-.courses{
+.courses {
     margin-top: 10rem;
 }
 
-.courses__container{
+.courses__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
-.course{
+.course {
     background: var(--color-primary);
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transation);
 }
 
-.course:hover{
+.course:hover {
     background: transparent;
     border-color: var(--color-primary);
 }
 
-.course__info{
+.course__info {
     padding: 2rem;
 }
 
-.course__info p{
+.course__info p {
     margin: 1.2rem 0 1.3rem;
     font-size: 0.9rem;
 }
+
 /*----------------------------- FAQS -----------------------------*/
 
-.faqs{
+.faqs {
     background: var(--color-primary);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
-.faqs__container{
+.faqs__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-.faq{
+.faq {
     background: var(--color-bg);
     padding: 2rem;
     display: flex;
@@ -293,21 +298,65 @@ header{
     cursor: pointer;
 }
 
-.faq h4{
+.faq h4 {
     font-size: 1rem;
     line-height: 2.2;
 }
 
-.faq__icon{
+.faq__icon {
     align-self: flex-start;
     font-size: 1.2rem;
 }
 
-.faq p{
+.faq p {
     margin-top: 0.8rem;
     display: none;
 }
 
-.faq.open p{
+.faq.open p {
     display: block;
+}
+
+/*----------------------------- Testimonial -----------------------------*/
+
+.testimonials__Container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-primary);
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: "";
+    display: block;
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
 }
