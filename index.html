@@ -17,7 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
 
+    <!--Swipper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!--CSS-->
     <link rel="stylesheet" href="/css/style.css">
+
+
 </head>
 
 <body>
@@ -253,10 +259,10 @@
         </div>
     </section>
 
-    <section class="container testimonials__Container">
+    <section class="container testimonials__Container swiper mySwiper">
         <h2>Customer Feedback</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./Images/18157231.jpg" alt="">
                 </div>
@@ -269,7 +275,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./Images/18157231.jpg" alt="">
                 </div>
@@ -282,7 +288,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./Images/18157231.jpg" alt="">
                 </div>
@@ -295,7 +301,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./Images/18157231.jpg" alt="">
                 </div>
@@ -308,7 +314,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./Images/18157231.jpg" alt="">
                 </div>
@@ -321,7 +327,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./Images/18157231.jpg" alt="">
                 </div>
@@ -334,6 +340,10 @@
                 </div>
             </article>
         </div>
+        <div class="testimonial__slider">
+            <div class="swiper-pagination test__co"></div>
+        </div>
+        
     </section>
 
 
@@ -343,6 +353,26 @@
 
 
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            //when windows width is >= 600px
+            breakpoints:{
+                600:{
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
 
 </body>
 
