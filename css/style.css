@@ -466,24 +466,25 @@ footer {
         opacity: 0;
     }
 
-    .nav__menu li:nth-child(2){
+    .nav__menu li:nth-child(2) {
         animation-delay: 200ms;
     }
 
-    .nav__menu li:nth-child(3){
+    .nav__menu li:nth-child(3) {
         animation-delay: 400ms;
     }
 
-    .nav__menu li:nth-child(4){
+    .nav__menu li:nth-child(4) {
         animation-delay: 600ms;
     }
 
     @keyframes animationNavItems {
-        0%{
-            
+        0% {
+
             transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
         }
-        100%{
+
+        100% {
             transform: rotateZ(0deg) rotateX(0) scale(1);
             opacity: 1;
         }
@@ -491,16 +492,71 @@ footer {
 
     .nav__menu li a {
         background: var(--color-primary);
-        box-shadow: -4rem 6rem 10rem  rgba(0, 0, 0, 0.5);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.5);
         height: 100%;
         width: 100%;
         display: grid;
         place-items: center;
     }
 
-    .nav__menu li a:hover{
+    .nav__menu li a:hover {
         background-color: var(--color-black);
         color: var(--color-white);
     }
+
+    /*---------HEADER----------*/
+
+    header {
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
+
+    .header__container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    /*---------Menu----------*/
+
+    .categories {
+        height: auto;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+    /*---------course----------*/
+
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr;
+    }
+
+    /*---------faqs----------*/
+
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+    }
+
+    /*---------faqs----------*/
+
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 
 }
